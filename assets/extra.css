@@ -1,0 +1,61 @@
+html, main {
+	background-color: azure;
+}
+.backclaro {
+	background-color:azure;
+}
+.cabecalho {
+	color:#fff;
+	background-color:RGBA(33,37,41,var(--bs-bg-opacity,1));
+}
+
+.centro {
+	text-align: center;
+}
+* {
+	font-family: 'Oswald', sans-serif;
+}
+.sombra {
+	box-shadow: 0 8px 8px -6px black;
+}
+.container-dl {
+	background-color:white;
+	position:relative;
+	width: 80%;
+	margin: 2% auto;
+	display: flex;
+  	align-items: center;
+	box-shadow: 0 0 8px 0 black;
+	padding: 0.7%;
+}
+
+.navbarpp {
+	background-color:lightpink;
+}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+	font-family: Arial, sans-serif;
+	font-size: 121%;
+	text-align: center;
+}
+  
+th, td {
+	padding: 0.6%;
+	border: 1px solid #ddd;
+}
+  
+th {
+	background-color: #f2f2f2;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+  
+tr:nth-child(even) {
+	background-color: #f9f9f9;
+}
+  
+tr:hover {
+	background-color: #ddd;
+}
