@@ -51,16 +51,107 @@
       </nav>
   </div>
 
-
- 
-
     <div class="container-dl">
-  
-      </div>
-        
-    
-          
-          
+      <form class="row g-3" action="/login.php" method="post">
+        <div class="col-12 col-lg-3 col-md-6">
+          <label for="inputNome" class="form-label">Nome</label>
+          <input type="text" class="form-control" required pattern="[aA-zZ\s]+$" placeholder="Ex: Maria" id="inputNome" aria-label="First name">
+        </div>
+        <div class="col-12 col-lg-3 col-md-6">
+          <label for="inputSobrenome" class="form-label">Sobrenome</label>
+          <input type="text" class="form-control" required pattern="[aA-zZ\s]+$" placeholder="Ex: da Silva" id="inputSobrenome" aria-label="Last name">
+        </div>
+        <div class="col-12 col-lg-3 col-md-6">
+          <label for="inputEmail" class="form-label">Email</label>
+          <input type="email" class="form-control" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="marialuizadasilva@exemplo.com" id="inputEmail">
+        </div>
+        <div class="col-12 col-lg-3 col-md-6">
+          <label for="imputNascimento" class="form-label">Data de nascimento</label>
+          <input type="date" class="form-control" required pattern="[0-9]{2}\/[0-9]{2}\/[0-9]{4}$" placeholder="dd/mm/aaaa" id="imputNascimento">
+        </div>
+        <div class="col-12 col-lg-3 col-md-6">
+          <label for="inputCelular" class="form-label">Celular</label>
+          <input type="number" class="form-control" required pattern="\([0-9]{2}\) [0-9]{4,5}-[0-9]{4}$" placeholder="(00) 00000-0000" id="inputCelular">
+        </div>
+        <div class="col-12 col-lg-3 col-md-6">
+          <label for="inputCidade" class="form-label">Cidade</label>
+          <input type="text" class="form-control" id="inputCidade" placeholder="Veranópolis">
+        </div>
+        <div class="col-12 col-lg-3 col-md-6">
+          <label for="inputAgendamento" class="form-label">Data do serviço desejado</label>
+          <input type="date" class="form-control" required id="inputAgendamento" placeholder="dd/mm/aaaa">
+        </div>
+        <div class="col-12 col-lg-3 col-md-6">
+          <label for="inputHorario" class="form-label">Horário</label>
+          <select class="form-select" required id="inputHorario">
+            <option value="1">08:00 - 10:00</option>
+            <option value="2">10:00 - 12:00</option>
+            <option value="3">13:30 - 15:30</option>
+            <option value="2">15:30 - 17:30</option>
+            <option value="3">17:30 - 19:30</option>
+          </select>
+        </div>
+        <h3 class="text-center">Serviços</h3>
+        <div class="col-12 col-lg-3 col-md-6">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridSimples">
+            <label class="form-check-label" for="gridSimples">
+              Mão Simples
+            </label>
+          </div>
+        </div>
+        <div class="col-12 col-lg-3 col-md-6">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridPosticas">
+            <label class="form-check-label" for="gridPosticas">
+              Unhas Postiças 
+            </label>
+          </div>
+        </div>
+        <div class="col-12 col-lg-3 col-md-6">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridAlongamento">
+            <label class="form-check-label" for="gridAlongamento">
+              Aplicação de Alongamento 
+            </label>
+          </div>
+        </div>
+        <div class="col-12 col-lg-3 col-md-6">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridManutencao">
+            <label class="form-check-label" for="gridManutencao">
+              Manutenção
+            </label>
+          </div>
+        </div>
+        <div class="col-12 col-lg-3 col-md-6">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridReposicao">
+            <label class="form-check-label" for="gridReposicao">
+              Reposição de alongamento
+            </label>
+          </div>
+        </div>
+        <div class="col-12 col-lg-3 col-md-6">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridBlindagem">
+            <label class="form-check-label" for="gridBlindagem">
+              Blindagem / Banho de gel
+            </label>
+          </div>
+        </div>
+        <div class="col-12 linhacima">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" required id="gridCheck">
+            <label class="form-check-label"  for="gridCheck">
+              Confirmo minha presença
+            </label>
+          </div>
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Confirmar</button>
+        </div>
+      </form>
     </div>
 
     

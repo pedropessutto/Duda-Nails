@@ -63,3 +63,11 @@ tr:hover {
 #copiarfrase {
 	text-align: center;
 }
+
+.linhacima {
+	border-top: 1px dotted #ddd;
+	padding-top: 2%;
+	width: 97%;
+	margin: auto;
+	margin-top: 2%;
+}
